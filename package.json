@@ -1,0 +1,24 @@
+{
+  "name": "number-helpers",
+  "version": "0.0.1",
+  "description": "Set of helpers to work on number data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "@kevingio/number-helpers",
+  "keywords": [
+    "number",
+    "helpers",
+    "utils",
+    "utility",
+    "kevingio",
+    "shortcuts"
+  ],
+  "author": "Kevin Giovanni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevingio/number-helpers/issues"
+  },
+  "homepage": "https://github.com/kevingio/number-helpers#readme"
+}
