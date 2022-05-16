@@ -2,9 +2,9 @@
   "name": "@kevingio/number-utils",
   "version": "0.0.1",
   "description": "Set of utils to work on number",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config=webpack.config.js"
   },
   "repository": "@kevingio/number-utils",
   "keywords": [
@@ -20,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/kevingio/number-utils/issues"
   },
-  "homepage": "https://github.com/kevingio/number-utils#readme"
+  "homepage": "https://github.com/kevingio/number-utils#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {}
 }
