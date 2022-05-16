@@ -1,6 +1,6 @@
 {
   "name": "@kevingio/number-utils",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Set of utils to work on number",
   "main": "dist/main.js",
   "scripts": {
