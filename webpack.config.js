@@ -4,7 +4,6 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: 'production',
-    devtool: 'source-map',
     entry: './src/index.js',
     output: {
         filename: 'main.js',
@@ -16,21 +15,22 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js)$/,
                 exclude: /[\\/]node_modules[\\/]/,
                 use: {
                     loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
                 },
             },
         ]
     },
+    resolve: {
+        extensions: ['.js'],
+    },
     optimization: {
-        minimize: true,
-        minimizer: [new TerserPlugin({
-            parallel: true,
-            terserOptions: {
-                sourceMap: true,
-            }
-        })],
+        minimize: false,
+        minimizer: [new TerserPlugin()],
     }
 }
